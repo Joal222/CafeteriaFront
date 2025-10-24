@@ -1,0 +1,26 @@
+/* Estilos generales para las tarjetas de producto */
+.producto-card {
+  /* Mantenemos bordes redondeados y sombra de Tailwind, 
+     pero podemos añadir un borde personalizado si queremos */
+  border: 1px solid #f3eade; /* Un borde color crema muy sutil */
+  transition: all 0.3s ease-in-out; /* Suaviza la transición del hover */
+}
+
+/* Efecto al pasar el ratón sobre la tarjeta */
+.producto-card:hover {
+  /* Aumentamos la sombra (podríamos quitar la clase shadow-md de Tailwind si usamos esto) */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  /* Podríamos añadir otros efectos, como un ligero levantamiento */
+  /* transform: translateY(-5px); */ 
+}
+
+/* Estilo personalizado para el título del producto */
+.producto-titulo {
+  font-family: 'Georgia', serif; /* Una fuente diferente para el título */
+  color: #5a3a22; /* Un marrón más específico si queremos */
+}
+
+/* Estilo para el precio */
+.producto-precio {
+  /* Podemos añadir estilos específicos al precio si es necesario */
+}
