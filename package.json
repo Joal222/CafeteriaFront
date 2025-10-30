@@ -14,7 +14,8 @@
     "axios": "^1.12.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "sweetalert2": "^11.25.0"
+    "sweetalert2": "^11.25.0",
+    "swiper": "^12.0.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

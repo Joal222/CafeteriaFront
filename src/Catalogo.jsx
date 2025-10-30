@@ -28,22 +28,20 @@ function Catalogo({ agregarAlCarrito }) {
   }, [terminoBusqueda]);
 
   return (
-    <div className="p-4 sm:p-6 lg:p-8">
+
+    <div id="menu" className="p-4 sm:p-6 lg:p-8">
       <div className="flex flex-col sm:flex-row justify-center items-center mb-8 gap-4">
-        <h2 className="text-3xl font-bold text-amber-900">Nuestro Menú</h2>
-        {/* Input para la búsqueda */}
+        <h2 className="text-3xl font-bold text-gray-900">Nuestro Menú</h2>     
         <input 
           type="text"
           placeholder="Buscar café, postre..."
-          className="w-full sm:w-64 p-2 border border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
+          className="w-full sm:w-64 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-800"
           value={terminoBusqueda}
-          // Cada vez que el usuario escribe, actualizamos el estado 'terminoBusqueda'
           onChange={(e) => setTerminoBusqueda(e.target.value)} 
         />
       </div>
       {error && <p className="text-red-500 text-center">{error}</p>}
       
-      {/* Grid para mostrar los productos */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {productos.map((producto) => (
           <div key={producto.id} className="producto-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">

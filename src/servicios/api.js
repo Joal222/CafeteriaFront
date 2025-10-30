@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // ¡IMPORTANTE! Asegúrate de que esta URL sea la correcta para tu backend (la que usa HTTPS).
-const API_URL = 'https://cafeteria-api-service-fhf6eebkabdzdudj.mexicocentral-01.azurewebsites.net/api';
+const API_URL = 'http://localhost:5138/api';
 const api = axios.create({
   baseURL: API_URL,
 });

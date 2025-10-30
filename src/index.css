@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-pagination-bullet {
+  background-color: #9ca3af; /* Un gris neutro */
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #1f2937; /* El gris oscuro de tus botones */
+  opacity: 1;
+  transform: scale(1.2);
+}
